@@ -25,4 +25,7 @@ xs = [2**k for k in range(10,25)]
 ys = [pi_error(x) for x in xs]
 plt.plot(xs, ys)
 plt.xscale('log')
+plt.xlabel('Number of points')
+plt.ylabel('Error')
+plt.title('Decrease of error relative to number of points')
 plt.show()
